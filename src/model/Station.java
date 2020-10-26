@@ -4,17 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Station {
-//    private String name;
-    private String stationNum;
-    private List<String> stations = new ArrayList<>();
-
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
+    private String stationNum;                              //存储站点所在线路名
+    private List<String> stations = new ArrayList<>();      //存储线路内所有站点名
 
     public String getStationNum() {
         return stationNum;
@@ -31,5 +22,4 @@ public class Station {
     public void setStations(List<String> stations) {
         this.stations = stations;
     }
-//    private String lineChange;
 }

@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Floyd {
     private static final int max = 99999;
-    private int[][] path;
-    private int[][] distance;
+    private int[][] path;                       //最短路径
+    private int[][] distance;                   //最短距离
 
 
     //Floyd算法求最短路径
@@ -36,17 +36,6 @@ public class Floyd {
     public int SearchMin(int i, int j){
         return this.distance[i][j];
     }
-
-//    public void print(int[][] distance){
-//        this.distance = distance;
-//        int len = distance.length;
-//        for(int i = 0; i < 10; i++){
-//            for(int j = 0; j < len; j++) {
-//                System.out.print(distance[i][j]+"  ");
-//            }
-//            System.out.println();
-//        }
-//    }
 
     public static int getMax() {
         return max;
